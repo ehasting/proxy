@@ -66,6 +66,7 @@ void handle_client(int client_sock, struct sockaddr_in client_addr);
 void forward_data(int source_sock, int destination_sock);
 void forward_data_ext(int source_sock, int destination_sock, char *cmd);
 int parse_options(int argc, char *argv[]);
+int create_connection();
 
 int server_sock, client_sock, remote_sock, remote_port;
 char *remote_host, *cmd_in, *cmd_out;
